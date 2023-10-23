@@ -2,12 +2,17 @@
 
 require "sinatra"
 require "sinatra/reloader"
+require "better_errors"
+require "binding_of_caller"
 
 
 
 get("/") do
   "<h1>Dice Roll</h1>"
 
+end
+
+get("/") do
   
   "<a href="/dice/2/6">Roll two 6 sided dice</a>"
 end
